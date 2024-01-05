@@ -8,6 +8,7 @@ import color from "picocolors";
 import prompts from "prompts";
 import yargs from "yargs";
 import {hideBin} from "yargs/helpers";
+import { runInstallCommnad } from "./install.js";
 
 // Specify CLI arguments
 const args = yargs(hideBin(process.argv)).options({
@@ -20,6 +21,11 @@ const args = yargs(hideBin(process.argv)).options({
     alias: "t",
     type: "string",
     description: "Template to use",
+  },
+  dependencies: {
+    alias: "d",
+    type: "boolean",
+    description: "Install dependencies",
   },
 });
 
@@ -52,6 +58,12 @@ async function main() {
           {title: "React (vite) + ESLint + TypeScript + Tailwind", value: "react-eslint-ts-tw"},
         ],
       },
+      {
+        type: "confirm",
+        name: "dependencies",
+        message: "Install dependencies?",
+        initial: true
+      }
     ],
     {
       onCancel: () => {
@@ -83,14 +95,19 @@ async function main() {
     await writeFile(file, draft, "utf8");
   }
 
-  // Log outro message
+  // Install dependencies
+  if (project.dependencies) {
+    await runInstallCommnad(project.name)
+  }
+  
+  // Log another message
   console.log("✨ Project created ✨");
   console.log(`\n${color.yellow(`Next steps:`)}\n`);
   console.log(`${color.green(`cd`)} ${project.name}`);
-  console.log(`${color.green(`pnpm`)} install`);
+  if (!project.dependencies) {
+    console.log(`${color.green(`pnpm`)} install`);
+  }
   console.log(`${color.green(`pnpm`)} dev`);
-  console.log("\n---\n");
-  console.log(`Questions 👀? ${color.underline(color.cyan("https://x.com/goncy"))}`);
 }
 
 main().catch(console.error);

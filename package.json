@@ -1,5 +1,5 @@
 {
-  "name": "next-david-init",
+  "name": "create-next-david",
   "version": "1.0.0",
   "description": "A package to init nextjs using David Land config",
   "main": "index.js",
@@ -13,8 +13,11 @@
   "author": "David Land",
   "license": "ISC",
   "dependencies": {
+    "child_process": "^1.0.2",
     "glob": "^10.3.5",
+    "path": "^0.12.7",
     "picocolors": "^1.0.0",
+    "pnpm": "^8.14.0",
     "prompts": "^2.4.2",
     "yargs": "^17.7.2"
   }
