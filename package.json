@@ -1,0 +1,21 @@
+{
+  "name": "next-david-init",
+  "version": "1.0.0",
+  "description": "A package to init nextjs using David Land config",
+  "main": "index.js",
+  "bin": {
+    "create-next-david": "./index.js"
+  },
+  "scripts": {
+    "test": "dev"
+  },
+  "type": "module",
+  "author": "David Land",
+  "license": "ISC",
+  "dependencies": {
+    "glob": "^10.3.5",
+    "picocolors": "^1.0.0",
+    "prompts": "^2.4.2",
+    "yargs": "^17.7.2"
+  }
+}
