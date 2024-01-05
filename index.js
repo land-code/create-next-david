@@ -56,6 +56,7 @@ async function main() {
           {title: "Next.js + ESLint + TypeScript + Tailwind", value: "next-eslint-ts-tw"},
           {title: "Next.js + ESLint + TypeScript + Shadcn/ui", value: "next-eslint-ts-shadcn"},
           {title: "React (vite) + ESLint + TypeScript + Tailwind", value: "react-eslint-ts-tw"},
+          {title: "Astro + Typescript + Tailwind", value: "astro-ts-tw"}
         ],
       },
       {
