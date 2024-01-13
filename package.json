@@ -1,6 +1,6 @@
 {
   "name": "create-next-david",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A package to init nextjs using David Land config",
   "main": "index.js",
   "bin": {
