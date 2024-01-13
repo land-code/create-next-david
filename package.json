@@ -6,6 +6,10 @@
   "bin": {
     "create-next-david": "./index.js"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/land-code/create-next-david"
+  },
   "scripts": {
     "test": "dev"
   },
