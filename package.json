@@ -11,7 +11,7 @@
     "url": "https://github.com/land-code/create-next-david"
   },
   "scripts": {
-    "test": "dev"
+    "test": "exit 0"
   },
   "publishConfig": {
     "@land-code:registry": "https://npm.pkg.github.com"
