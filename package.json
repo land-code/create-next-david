@@ -1,10 +1,10 @@
 {
-  "name": "create-next-david",
+  "name": "create-david-app",
   "version": "1.0.4",
   "description": "A package to init nextjs using David Land config",
   "main": "index.js",
   "bin": {
-    "create-next-david": "./index.js"
+    "create-david-app": "./index.js"
   },
   "repository": {
     "type": "git",

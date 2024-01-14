@@ -39,7 +39,7 @@ async function main() {
         type: "text",
         name: "name",
         message: "What is the name of your project?",
-        initial: args.argv._[0] || "appncy-project",
+        initial: args.argv._[0] || "land-project",
         validate: (value) => {
           if (value.match(/[^a-zA-Z0-9-_]+/g))
             return "Project name can only contain letters, numbers, dashes and underscores";
