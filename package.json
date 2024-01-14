@@ -1,5 +1,5 @@
 {
-  "name": "@land-code/create-next-david",
+  "name": "create-next-david",
   "version": "1.0.3",
   "description": "A package to init nextjs using David Land config",
   "main": "index.js",
