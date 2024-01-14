@@ -1,5 +1,5 @@
 {
-  "name": "create-next-david",
+  "name": "@land-code/create-next-david",
   "version": "1.0.3",
   "description": "A package to init nextjs using David Land config",
   "main": "index.js",
@@ -12,6 +12,9 @@
   },
   "scripts": {
     "test": "dev"
+  },
+  "publishConfig": {
+    "@land-code:registry": "https://npm.pkg.github.com"
   },
   "type": "module",
   "author": "David Land",
