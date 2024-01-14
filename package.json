@@ -13,9 +13,6 @@
   "scripts": {
     "test": "exit 0"
   },
-  "publishConfig": {
-    "@land-code:registry": "https://npm.pkg.github.com"
-  },
   "type": "module",
   "author": "David Land",
   "license": "ISC",
