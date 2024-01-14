@@ -14,7 +14,7 @@
     "test": "exit 0"
   },
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com"
+    "@land-code:registry": "https://npm.pkg.github.com"
   },
   "type": "module",
   "author": "David Land",
