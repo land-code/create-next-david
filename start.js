@@ -1,7 +1,7 @@
 import { spawn } from 'child_process';
 
-export const runInstallCommand = async (projectName) => {
-  const install = spawn('pnpm install', { cwd: projectName, shell: true });
+export const runDevCommand = async (projectName) => {
+  const install = spawn(`cd ${projectName} && code . && pnpm dev`, { shell: true });
 
   install.stdout.on('data', (data) => {
     console.log(`stdout: ${data}`);
