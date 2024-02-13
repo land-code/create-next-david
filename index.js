@@ -9,6 +9,7 @@ import prompts from 'prompts'
 import yargs from 'yargs'
 import { hideBin } from 'yargs/helpers'
 import { runInstallCommand } from './install.js'
+import { runDevCommand } from './start.js'
 
 // Specify CLI arguments
 const args = yargs(hideBin(process.argv)).options({
@@ -129,7 +130,7 @@ async function main() {
   // Start the project
   if (project.start) {
     console.log(`\n${color.yellow(`Starting the project...`)}\n`)
-    await runInstallCommand(project.name, 'dev')
+    await runDevCommand(project.name, 'dev')
     return
   }
 
